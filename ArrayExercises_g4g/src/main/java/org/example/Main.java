@@ -1,5 +1,7 @@
 package org.example;
 
+import static org.example.arrayExercise.sum;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -7,8 +9,9 @@ public class Main {
         arrayExercise exercise = new arrayExercise();
 
         exercise.sum();
+        //sum();
 
-        System.out.println(exercise.sum());
+        System.out.println(sum());
 
 
     }
