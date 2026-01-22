@@ -27,7 +27,8 @@ class Cars {
     }
 
     public void setTyreType(String tyreType) {
-        TyreType = tyreType;
+        this.TyreType = tyreType;
+        System.out.println("calling the original method");
     }
 
     public void setElectric(boolean electric) {
