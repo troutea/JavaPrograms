@@ -2,27 +2,28 @@ package org.example;
 
 public class Tyre {
 
-    private String goodYear;
-    private String dunlop;
+    public String winter;
+    public String summer;
 
     public Tyre(String goodYear, String dunlop) {
-        this.goodYear = goodYear;
-        this.dunlop = dunlop;
+        this.winter = goodYear;
+        this.summer = dunlop;
+        System.out.println("calling the tyre constructor");
     }
 
     public String getGoodYear() {
-        return goodYear;
+        return winter;
     }
 
     public void setGoodYear(String goodYear) {
-        this.goodYear = goodYear;
+        this.winter = goodYear;
     }
 
     public void setDunlop(String dunlop) {
-        this.dunlop = dunlop;
+        this.summer = dunlop;
     }
 
     public String getDunlop() {
-        return dunlop;
+        return summer;
     }
 }

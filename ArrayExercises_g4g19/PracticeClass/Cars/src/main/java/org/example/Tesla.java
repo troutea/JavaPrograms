@@ -1,17 +1,17 @@
 package org.example;
 
 public class Tesla extends Cars {
-    private String Red;
-    private String white;
+    private String Color;
     private int maxSpeed = 100;
     private String TyreType;
 
-    public String getRed() {
-        return Red;
-    }
 
-    public String getWhite() {
-        return white;
+   public void setColor(String Color) {
+       this.Color = Color;
+   }
+
+    public String getColor() {
+        return Color;
     }
 
     public void setTyreType(String tyreType) {

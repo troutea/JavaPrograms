@@ -14,8 +14,14 @@ package org.example;
         tesla.setTyreType("rubber");
 
 
+        Tyre tyre = new Tyre("dunlop", "champion");
+        System.out.println("the tyre type is  " + tyre.summer);
+        System.out.println("the tyre type is  " + tyre.winter);
+        tyre.winter = "skoda";
+        System.out.println("the tyre type is  " + tyre.winter);
 
-        System.out.println("The tyre type is  " + tesla.getTyreType());
+
+
 
     }
 }
