@@ -1,4 +1,11 @@
 package org.example;
+//Cars is the base class
+
+//Demonstrate the constructor: completed
+//demonstrate this keyword: completed in set functions
+//demonstrate access modifiers // public private protected  demonstrated
+// demonstrate encapsulation  demonstrated using private
+//demonstrate the overriding demonstrated in settyretype method and also polymorphism
 
 class Cars {
     private String Model;
@@ -9,6 +16,10 @@ class Cars {
     private boolean electric;
     private boolean combustion;
     public int MaxSpeed;
+
+    public Cars() {
+        System.out.println("Calling the constructor for Cars with no initial values set");
+    }
 
     public void setModel(String model) {
         Model = model;
