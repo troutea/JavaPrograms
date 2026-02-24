@@ -15,33 +15,38 @@ package org.example;
         //overridden method
 
         //demonstrates Inheritance and polymorphism
-         tesla.setTyreType("rubber");
+
+
+        
+         tesla.setTyreType("michelin");
+
          tesla.setModel("Model 3");
          tesla.getModel();
-         //System.out.println(tesla.getModel());
+         tesla.setColor("Black");
+         System.out.println(tesla.getColor());
+         System.out.println(tesla.getModel());
+
+         // Using the super keyword here
+         System.out.println(tesla.getTyreType());
+
+
 //
 //        //here is the specific tesla function detailed in the tesla class
 //       // Tesla tesla_prop = new Tesla();
         //Might need to make this static see
         //https://gemini.google.com/app/fd3052dd10ca5378
-        ((Tesla)tesla).setColor("Black");
-         System.out.println(((Tesla)tesla).getColor());
-
-
+//        ((Tesla)tesla).setColor("Black");
+//         System.out.println(((Tesla)tesla).getColor());
 
 
         //Here I want to call specific functions from Tesla class for e.g setColor
+       // Pattern Matching for instanceof to make this much safer and more readable:
+        // In hindsight this casts, I should move this function to the base class Cars
 
-
-//        Tyre tyre = new Tyre("dunlop", "champion");
-//        System.out.println("the tyre type is  " + tyre.summer);
-//        System.out.println("the tyre type is  " + tyre.winter);
-//        tyre.winter = "skoda";
-//        System.out.println("the tyre type is  " + tyre.winter);
-
-
-
-
+//        if (tesla instanceof Tesla t) {
+//            t.setColor("Black");
+//            System.out.println(t.getColor());
+//        }
 
 
     }

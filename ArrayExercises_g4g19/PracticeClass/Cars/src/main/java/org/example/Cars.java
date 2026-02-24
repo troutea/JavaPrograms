@@ -16,6 +16,7 @@ class Cars {
     private boolean electric;
     private boolean combustion;
     public int MaxSpeed;
+    private String Color;
 
     public Cars() {
         System.out.println("Calling the constructor for Cars with no initial values set");
@@ -71,6 +72,7 @@ class Cars {
     }
 
     public String getTyreType() {
+        System.out.println("Calling the baseclass getTyreType function");
         return TyreType;
     }
 
@@ -84,5 +86,12 @@ class Cars {
 
     public int getMaxSpeed() {
         return MaxSpeed;
+    }
+    public void setColor(String Color) {
+        this.Color = Color;
+    }
+
+    public String getColor() {
+        return Color;
     }
 }
